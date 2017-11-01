@@ -8,7 +8,7 @@
 
 	icon = 'icons/mob/human_face_or_vr.dmi'
 	var/color_blend_mode = ICON_MULTIPLY
-	species_allowed = list("Human","Skrell","Unathi","Tajara", "Teshari", "Nevrean", "Akula", "Sergal", "Flatland Zorren", "Highlander Zorren", "Vulpkanin", "Xenochimera", "Xenomorph Hybrid", "Vasilissan", "Rapala") //This lets all races use the default hairstyles.
+	species_allowed = list("Human","Skrell","Unathi","Tajara", "Teshari", "Nevrean", "Akula", "Sergal", "Flatland Zorren", "Highlander Zorren", "Vulpkanin", "Xenochimera", "Xenomorph Hybrid", "Vasilissan", "Rapala","Datashark","Lopunny","Grovyle","Eevee","Glaceon","Shiny Glaceon","Flareon","Subteranean Slime","Absol","Lugia","Lucky") //This lets all races use the default hairstyles.
 
 	citheronia
 		name = "Citheronia Hair (Kira72)"
@@ -54,13 +54,13 @@
 		name = "Bald"
 		icon_state = "bald"
 		gender = MALE
-		species_allowed = list("Human","Skrell","Unathi","Tajara", "Teshari", "Nevrean", "Akula", "Sergal", "Flatland Zorren", "Highlander Zorren", "Vulpkanin", "Xenochimera", "Xenomorph Hybrid", "Vasilissan", "Xenochimera", "Rapala") //Lets all the races be bald if they want.
+		species_allowed = list("Human","Skrell","Unathi","Tajara", "Teshari", "Nevrean", "Akula", "Sergal", "Flatland Zorren", "Highlander Zorren", "Vulpkanin", "Xenochimera", "Xenomorph Hybrid", "Vasilissan", "Xenochimera", "Rapala","Datashark","Lopunny","Grovyle","Eevee","Glaceon","Shiny Glaceon","Flareon","Subteranean Slime","Absol","Lugia","Lucky") //Lets all the races be bald if they want.
 
 	ponytail6_fixed //Eggnerd's done with waiting for upstream fixes lmao.
 		name = "Ponytail 6 but fixed"
 		icon = 'icons/mob/human_face_vr.dmi'
 		icon_state = "hair_ponytail6"
-		species_allowed = list("Human","Skrell","Unathi","Tajara", "Nevrean", "Akula", "Sergal", "Flatland Zorren", "Highlander Zorren", "Vulpkanin", "Xenochimera", "Xenomorph Hybrid", "Rapala")
+		species_allowed = list("Human","Skrell","Unathi","Tajara", "Nevrean", "Akula", "Sergal", "Flatland Zorren", "Highlander Zorren", "Vulpkanin", "Xenochimera", "Xenomorph Hybrid", "Rapala","Datashark","Lopunny","Grovyle","Eevee","Glaceon","Shiny Glaceon","Flareon","Subteranean Slime","Absol","Lugia","Lucky")
 
 	una_hood
 		name = "Cobra Hood"
@@ -348,7 +348,7 @@
 /datum/sprite_accessory/facial_hair
 	icon = 'icons/mob/human_face_or_vr.dmi'
 	var/color_blend_mode = ICON_MULTIPLY
-	species_allowed = list("Human","Skrell","Unathi","Tajara", "Teshari", "Nevrean", "Akula", "Sergal", "Flatland Zorren", "Highlander Zorren", "Vulpkanin", "Xenochimera", "Xenomorph Hybrid", "Vasilissan", "Rapala") //This lets all races use the facial hair styles.
+	species_allowed = list("Human","Skrell","Unathi","Tajara", "Teshari", "Nevrean", "Akula", "Sergal", "Flatland Zorren", "Highlander Zorren", "Vulpkanin", "Xenochimera", "Xenomorph Hybrid", "Vasilissan", "Rapala","Datashark","Lopunny","Grovyle","Eevee","Glaceon","Shiny Glaceon","Flareon","Subteranean Slime","Absol","Lugia","Lucky") //This lets all races use the facial hair styles.
 
 
 	vulp_none
