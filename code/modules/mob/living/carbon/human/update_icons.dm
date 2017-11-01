@@ -230,6 +230,10 @@ var/global/list/damage_icon_parts = list()
 	var/hulk = (HULK in src.mutations)
 	var/skeleton = (SKELETON in src.mutations)
 
+	//ARFS edit
+	pixel_x = default_pixel_x
+	pixel_y = default_pixel_y
+
 	robolimb_count = 0
 	robobody_count = 0
 

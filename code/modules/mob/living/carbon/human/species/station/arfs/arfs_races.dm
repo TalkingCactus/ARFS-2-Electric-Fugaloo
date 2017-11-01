@@ -1,3 +1,10 @@
+/datum/species
+	var/icon_x_offset = 0
+	var/icon_y_offset = 0
+
+	var/overlay_x_offset = 0
+	var/overlay_y_offset = 0
+
 /*
 /datum/species/alien
 	name_plural = "Alien"

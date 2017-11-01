@@ -1167,6 +1167,11 @@
 
 	species.handle_post_spawn(src)
 
+	//ARFS edit
+	default_pixel_x = species.icon_x_offset
+	default_pixel_y = species.icon_y_offset
+	//
+
 	maxHealth = species.total_health
 
 	spawn(0)
