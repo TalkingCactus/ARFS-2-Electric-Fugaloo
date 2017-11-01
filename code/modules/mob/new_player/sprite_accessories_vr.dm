@@ -6,20 +6,9 @@
 
 /datum/sprite_accessory/hair
 
-	icon = 'icons/mob/human_face_or_vr.dmi'
-	var/color_blend_mode = ICON_MULTIPLY
-	species_allowed = list("Human","Skrell","Unathi","Tajara", "Teshari", "Nevrean", "Akula", "Sergal", "Flatland Zorren", "Highlander Zorren", "Vulpkanin", "Xenochimera", "Xenomorph Hybrid", "Vasilissan", "Rapala","Datashark","Lopunny","Grovyle","Eevee","Glaceon","Shiny Glaceon","Flareon","Subteranean Slime","Absol","Lugia","Lucky") //This lets all races use the default hairstyles.
-
-	citheronia
-		name = "Citheronia Hair (Kira72)"
-		icon = 'icons/mob/human_face_vr.dmi'
-		icon_state = "citheronia_hair"
-		ckeys_allowed = list("Kira72")
-
-	citheronia_colorable
-		name = "Citheronia Hair"
-		icon = 'icons/mob/human_face_vr.dmi'
-		icon_state = "citheronia_hair_c"
+	species_allowed = list("Human","Skrell","Unathi","Tajara", "Teshari", "Nevrean", "Akula", "Sergal", "Flatland Zorren", 
+	"Highlander Zorren", "Vulpkanin", "Xenochimera", "Xenomorph Hybrid","Lugia","Datashark","Grovyle","Eevee",
+	"Glaceon","Shiny Glaceon","Flareon","Absol","Lucky","Vulpix","Skunk","Slime","Lopunny","Subteranean Slime") //This lets all races use the default hairstyles.
 
 	sergal_plain
 		name = "Sergal Plain"
@@ -54,13 +43,8 @@
 		name = "Bald"
 		icon_state = "bald"
 		gender = MALE
-		species_allowed = list("Human","Skrell","Unathi","Tajara", "Teshari", "Nevrean", "Akula", "Sergal", "Flatland Zorren", "Highlander Zorren", "Vulpkanin", "Xenochimera", "Xenomorph Hybrid", "Vasilissan", "Xenochimera", "Rapala","Datashark","Lopunny","Grovyle","Eevee","Glaceon","Shiny Glaceon","Flareon","Subteranean Slime","Absol","Lugia","Lucky") //Lets all the races be bald if they want.
+		species_allowed = list("Human","Skrell","Unathi","Tajara", "Teshari", "Nevrean", "Akula", "Sergal", "Flatland Zorren", "Highlander Zorren", "Vulpkanin", "Xenochimera", "Xenomorph Hybrid","Vulpix") //Lets all the races be bald if they want.
 
-	ponytail6_fixed //Eggnerd's done with waiting for upstream fixes lmao.
-		name = "Ponytail 6 but fixed"
-		icon = 'icons/mob/human_face_vr.dmi'
-		icon_state = "hair_ponytail6"
-		species_allowed = list("Human","Skrell","Unathi","Tajara", "Nevrean", "Akula", "Sergal", "Flatland Zorren", "Highlander Zorren", "Vulpkanin", "Xenochimera", "Xenomorph Hybrid", "Rapala","Datashark","Lopunny","Grovyle","Eevee","Glaceon","Shiny Glaceon","Flareon","Subteranean Slime","Absol","Lugia","Lucky")
 
 	una_hood
 		name = "Cobra Hood"
@@ -91,26 +75,6 @@
 	una_horns
 		name = "Unathi Horns"
 		icon_state = "soghun_horns"
-		species_allowed = list("Unathi", "Xenochimera")
-
-	una_bighorns
-		name = "Unathi Big Horns"
-		icon_state = "unathi_bighorn"
-		species_allowed = list("Unathi", "Xenochimera")
-
-	una_smallhorns
-		name = "Unathi Small Horns"
-		icon_state = "unathi_smallhorn"
-		species_allowed = list("Unathi", "Xenochimera")
-
-	una_ramhorns
-		name = "Unathi Ram Horns"
-		icon_state = "unathi_ramhorn"
-		species_allowed = list("Unathi", "Xenochimera")
-
-	una_sidefrills
-		name = "Unathi Side Frills"
-		icon_state = "unathi_sidefrills"
 		species_allowed = list("Unathi", "Xenochimera")
 
 	una_doublehorns
@@ -179,177 +143,113 @@
 		name = "Tajara Messy"
 		icon_state = "hair_messy"
 		species_allowed = list("Tajara", "Xenochimera")
-
-//Skrell 'hairstyles' - these were requested for a chimera and screw it, if one wants to eat seafood, go nuts
-	skr_tentacle_veryshort
-		name = "Skrell Very Short Tentacles"
-		icon_state = "skrell_hair_veryshort"
-		species_allowed = list("Skrell", "Xenochimera")
-		gender = MALE
-
-	skr_tentacle_short
-		name = "Skrell Short Tentacles"
-		icon_state = "skrell_hair_short"
-		species_allowed = list("Skrell", "Xenochimera")
-
-	skr_tentacle_average
-		name = "Skrell Average Tentacles"
-		icon_state = "skrell_hair_average"
-		species_allowed = list("Skrell", "Xenochimera")
-
-	skr_tentacle_verylong
-		name = "Skrell Long Tentacles"
-		icon_state = "skrell_hair_verylong"
-		species_allowed = list("Skrell", "Xenochimera")
-		gender = FEMALE
-
 // Vulpa stuffs
 
 	vulp_hair_none
 		name = "None"
 		icon_state = "bald"
-		species_allowed = list("Vulpkanin", "Xenochimera")
+		species_allowed = list("Vulpkanin")
 		gender = NEUTER
 
 	vulp_hair_kajam
 		name = "Kajam"
 		icon = 'icons/mob/human_face_vr.dmi'
 		icon_state = "kajam"
-		species_allowed = list("Vulpkanin", "Xenochimera", "Tajara", "Sergal", "Flatland Zorren", "Highlander Zorren")
+		species_allowed = list("Vulpkanin")
 		gender = NEUTER
 
 	vulp_hair_keid
 		name = "Keid"
 		icon = 'icons/mob/human_face_vr.dmi'
 		icon_state = "keid"
-		species_allowed = list("Vulpkanin", "Xenochimera", "Tajara", "Sergal", "Flatland Zorren", "Highlander Zorren")
+		species_allowed = list("Vulpkanin")
 		gender = NEUTER
 
 	vulp_hair_adhara
 		name = "Adhara"
 		icon = 'icons/mob/human_face_vr.dmi'
 		icon_state = "adhara"
-		species_allowed = list("Vulpkanin", "Xenochimera", "Tajara", "Sergal", "Flatland Zorren", "Highlander Zorren")
+		species_allowed = list("Vulpkanin")
 		gender = NEUTER
 
 	vulp_hair_kleeia
 		name = "Kleeia"
 		icon = 'icons/mob/human_face_vr.dmi'
 		icon_state = "kleeia"
-		species_allowed = list("Vulpkanin", "Xenochimera", "Tajara", "Sergal", "Flatland Zorren", "Highlander Zorren")
+		species_allowed = list("Vulpkanin")
 		gender = NEUTER
 
 	vulp_hair_mizar
 		name = "Mizar"
 		icon = 'icons/mob/human_face_vr.dmi'
 		icon_state = "mizar"
-		species_allowed = list("Vulpkanin", "Xenochimera", "Tajara", "Sergal", "Flatland Zorren", "Highlander Zorren")
+		species_allowed = list("Vulpkanin")
 		gender = NEUTER
 
 	vulp_hair_apollo
 		name = "Apollo"
 		icon = 'icons/mob/human_face_vr.dmi'
 		icon_state = "apollo"
-		species_allowed = list("Vulpkanin", "Xenochimera", "Tajara", "Sergal", "Flatland Zorren", "Highlander Zorren")
+		species_allowed = list("Vulpkanin")
 		gender = NEUTER
 
 	vulp_hair_belle
 		name = "Belle"
 		icon = 'icons/mob/human_face_vr.dmi'
 		icon_state = "belle"
-		species_allowed = list("Vulpkanin", "Xenochimera", "Tajara", "Sergal", "Flatland Zorren", "Highlander Zorren")
+		species_allowed = list("Vulpkanin")
 		gender = NEUTER
 
 	vulp_hair_bun
 		name = "Bun"
 		icon = 'icons/mob/human_face_vr.dmi'
 		icon_state = "bun"
-		species_allowed = list("Vulpkanin", "Xenochimera", "Tajara", "Sergal", "Flatland Zorren", "Highlander Zorren")
+		species_allowed = list("Vulpkanin")
 		gender = NEUTER
 
 	vulp_hair_jagged
 		name = "Jagged"
 		icon = 'icons/mob/human_face_vr.dmi'
 		icon_state = "jagged"
-		species_allowed = list("Vulpkanin", "Xenochimera", "Tajara", "Sergal", "Flatland Zorren", "Highlander Zorren")
+		species_allowed = list("Vulpkanin")
 		gender = NEUTER
 
 	vulp_hair_curl
 		name = "Curl"
 		icon = 'icons/mob/human_face_vr.dmi'
 		icon_state = "curl"
-		species_allowed = list("Vulpkanin", "Xenochimera", "Tajara", "Sergal", "Flatland Zorren", "Highlander Zorren")
+		species_allowed = list("Vulpkanin")
 		gender = NEUTER
 
 	vulp_hair_hawk
 		name = "Hawk"
 		icon = 'icons/mob/human_face_vr.dmi'
 		icon_state = "hawk"
-		species_allowed = list("Vulpkanin", "Xenochimera", "Tajara", "Sergal", "Flatland Zorren", "Highlander Zorren")
+		species_allowed = list("Vulpkanin")
 		gender = NEUTER
 
 	vulp_hair_anita
 		name = "Anita"
 		icon = 'icons/mob/human_face_vr.dmi'
 		icon_state = "anita"
-		species_allowed = list("Vulpkanin", "Xenochimera", "Tajara", "Sergal", "Flatland Zorren", "Highlander Zorren")
+		species_allowed = list("Vulpkanin")
 		gender = NEUTER
 
 	vulp_hair_short
 		name = "Short"
 		icon = 'icons/mob/human_face_vr.dmi'
 		icon_state = "short"
-		species_allowed = list("Vulpkanin", "Xenochimera", "Tajara", "Sergal", "Flatland Zorren", "Highlander Zorren")
+		species_allowed = list("Vulpkanin")
 		gender = NEUTER
 
 	vulp_hair_spike
 		name = "Spike"
 		icon = 'icons/mob/human_face_vr.dmi'
 		icon_state = "spike"
-		species_allowed = list("Vulpkanin", "Xenochimera", "Tajara", "Sergal", "Flatland Zorren", "Highlander Zorren")
-		gender = NEUTER
-
-//xeno stuffs
-	xeno_head_drone_color
-		name = "Drone dome"
-		icon = 'icons/mob/human_face_vr.dmi'
-		icon_state = "cxeno_drone"
-		species_allowed = list("Xenomorph Hybrid")
-		gender = NEUTER
-// figure this one out for better coloring
-	xeno_head_sentinel_color
-		name = "Sentinal dome"
-		icon = 'icons/mob/human_face_vr.dmi'
-		icon_state = "cxeno_sentinel"
-		species_allowed = list("Xenomorph Hybrid")
-		gender = NEUTER
-
-	xeno_head_queen_color
-		name = "Queen dome"
-		icon = 'icons/mob/human_face_vr.dmi'
-		icon_state = "cxeno_queen"
-		species_allowed = list("Xenomorph Hybrid")
-		gender = NEUTER
-
-	xeno_head_hunter_color
-		name = "Hunter dome"
-		icon = 'icons/mob/human_face_vr.dmi'
-		icon_state = "cxeno_hunter"
-		species_allowed = list("Xenomorph Hybrid")
-		gender = NEUTER
-
-	xeno_head_praetorian_color
-		name = "Praetorian dome"
-		icon = 'icons/mob/human_face_vr.dmi'
-		icon_state = "cxeno_praetorian"
-		species_allowed = list("Xenomorph Hybrid")
+		species_allowed = list("Vulpkanin")
 		gender = NEUTER
 
 /datum/sprite_accessory/facial_hair
-	icon = 'icons/mob/human_face_or_vr.dmi'
-	var/color_blend_mode = ICON_MULTIPLY
-	species_allowed = list("Human","Skrell","Unathi","Tajara", "Teshari", "Nevrean", "Akula", "Sergal", "Flatland Zorren", "Highlander Zorren", "Vulpkanin", "Xenochimera", "Xenomorph Hybrid", "Vasilissan", "Rapala","Datashark","Lopunny","Grovyle","Eevee","Glaceon","Shiny Glaceon","Flareon","Subteranean Slime","Absol","Lugia","Lucky") //This lets all races use the facial hair styles.
-
 
 	vulp_none
 		name = "None"
@@ -414,101 +314,88 @@
 		species_allowed = list("Vulpkanin")
 		gender = NEUTER
 
+	vulpkanin
+		name = "Default Vulpkanin skin"
+		icon_state = "default"
+		icon = 'icons/mob/human_races/r_vulpkanin.dmi'
+		species_allowed = list("Vulpkanin")
+
 //Special hairstyles
 /datum/sprite_accessory/ears/inkling
 	name = "colorable mature inkling hair"
 	desc = ""
 	icon = 'icons/mob/human_face_vr.dmi'
 	icon_state = "inkling-colorable"
-	do_colouration = 1
+
 
 //VOREStation Body Markings and Overrides
 //Reminder: BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_TORSO,BP_GROIN,BP_HEAD
-
-/datum/sprite_accessory/marking //Override for base markings
-	var/color_blend_mode = ICON_ADD
-
 /datum/sprite_accessory/marking/vr
 	icon = 'icons/mob/human_races/markings_vr.dmi'
 
 	vulp_belly
 		name = "belly fur (Vulp)"
 		icon_state = "vulp_belly"
-		color_blend_mode = ICON_MULTIPLY
-		body_parts = list(BP_TORSO,BP_GROIN)
+		body_parts = list(BP_TORSO)
 
 	vulp_fullbelly
 		name = "full belly fur (Vulp)"
 		icon_state = "vulp_fullbelly"
-		color_blend_mode = ICON_MULTIPLY
-		body_parts = list(BP_TORSO,BP_GROIN)
+		body_parts = list(BP_TORSO)
 
 	vulp_crest
 		name = "belly crest (Vulp)"
 		icon_state = "vulp_crest"
-		color_blend_mode = ICON_MULTIPLY
-		body_parts = list(BP_TORSO,BP_GROIN)
+		body_parts = list(BP_TORSO)
 
 	vulp_nose
 		name = "nose (Vulp)"
 		icon_state = "vulp_nose"
-		color_blend_mode = ICON_MULTIPLY
 		body_parts = list(BP_HEAD)
 
 	vulp_face
 		name = "face (Vulp)"
 		icon_state = "vulp_face"
-		color_blend_mode = ICON_MULTIPLY
 		body_parts = list(BP_HEAD)
 
 	vulp_earsface
 		name = "ears and face (Vulp)"
 		icon_state = "vulp_earsface"
-		color_blend_mode = ICON_MULTIPLY
 		body_parts = list(BP_HEAD)
 
 	vulp_all
 		name = "all head highlights (Vulp)"
 		icon_state = "vulp_all"
-		color_blend_mode = ICON_MULTIPLY
 		body_parts = list(BP_HEAD)
 
 	sergal_full
 		name = "Sergal Markings"
 		icon_state = "sergal_full"
-		color_blend_mode = ICON_MULTIPLY
 		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_TORSO,BP_HEAD)
 		species_allowed = list("Sergal")
 
 	sergal_full_female
 		name = "Sergal Markings (Female)"
 		icon_state = "sergal_full_female"
-		color_blend_mode = ICON_MULTIPLY
 		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_TORSO,BP_HEAD)
 		species_allowed = list("Sergal")
+		gender = FEMALE
 
 	monoeye
 		name = "Monoeye"
 		icon_state = "monoeye"
 		body_parts = list(BP_HEAD)
 
-	spidereyes
-		name = "Spider Eyes"
-		icon_state = "spidereyes"
-		body_parts = list(BP_HEAD)
-
 	nevrean_female
 		name = "Female Nevrean beak"
 		icon_state = "nevrean_f"
 		body_parts = list(BP_HEAD)
-		color_blend_mode = ICON_MULTIPLY
 		gender = FEMALE
 
 	nevrean_male
 		name = "Male Nevrean beak"
 		icon_state = "nevrean_m"
 		body_parts = list(BP_HEAD)
-		color_blend_mode = ICON_MULTIPLY
 		gender = MALE
 
 	spots
@@ -519,7 +406,6 @@
 	shaggy_mane
 		name = "Shaggy mane/feathers"
 		icon_state = "shaggy"
-		color_blend_mode = ICON_MULTIPLY
 		body_parts = list(BP_TORSO)
 
 	jagged_teeth
@@ -542,197 +428,301 @@
 		icon_state = "tusks"
 		body_parts = list(BP_HEAD)
 
-	otie_face
-		name = "Otie face"
-		icon_state = "otieface"
-		color_blend_mode = ICON_MULTIPLY
-		body_parts = list(BP_HEAD)
+	m_dragon_belly
+		name = "Male Dragon Belly"
+		icon_state = "male_dragon_belly"
+		body_parts = list(BP_TORSO,BP_GROIN)
+		do_colouration = 1
 
-	otie_nose
-		name = "Otie nose"
-		icon_state = "otie_nose"
-		color_blend_mode = ICON_MULTIPLY
-		body_parts = list(BP_HEAD)
-
-	backstripes
-		name = "Back stripes"
-		icon_state = "otiestripes"
-		color_blend_mode = ICON_MULTIPLY
-		body_parts = list(BP_TORSO,BP_HEAD)
-
-	belly_butt
-		name = "Belly and butt"
-		icon_state = "bellyandbutt"
-		color_blend_mode = ICON_MULTIPLY
+	f_dragon_belly
+		name = "Female Dragon Belly"
+		icon_state = "female_dragon_belly"
 		body_parts = list(BP_GROIN,BP_TORSO)
+		do_colouration = 1
 
-	fingers_toes
-		name = "Fingers and toes"
-		icon_state = "fingerstoes"
-		color_blend_mode = ICON_MULTIPLY
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_HAND,BP_R_HAND)
 
-	otie_socks
-		name = "Fingerless socks"
-		icon_state = "otiesocks"
-		color_blend_mode = ICON_MULTIPLY
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND)
+/*
+/////////////////////////////
+/  =---------------------=  /
+/  == Dicks Definitions ==  /
+/  =---------------------=  /
+/////////////////////////////
+*/
 
-	corvid_beak
-		name = "Corvid beak"
-		icon_state = "corvidbeak"
-		color_blend_mode = ICON_MULTIPLY
-		body_parts = list(BP_HEAD)
+/datum/sprite_accessory/dicks
+	icon = 'icons/vore/extras/dicks.dmi'
+	species_allowed = list("Human","Unathi","Tajara","Skrell", "Sergal", "Akula","Nevrean", "Highlander Zorren", "Flatland Zorren", "Vulpkanin", "Xenomorph Hybrid","Vulpix")
 
-	corvid_belly
-		name = "Corvid belly"
-		icon_state = "corvidbelly"
-		color_blend_mode = ICON_MULTIPLY
-		body_parts = list(BP_GROIN,BP_TORSO,BP_HEAD)
+	dik_none
+		name = "None"
+		icon = null
+		icon_state = null
+		species_allowed = list("Human","Unathi","Tajara","Skrell", "Sergal", "Akula","Nevrean", "Highlander Zorren", "Flatland Zorren", "Vulpkanin", "Xenomorph Hybrid", "Diona", "Teshari", "Promethean")
 
-	cow_body
-		name = "Cow markings"
-		icon_state = "cowbody"
-		color_blend_mode = ICON_MULTIPLY
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_TORSO,BP_HEAD)
+	dik_normal
+		name = "Normal Dick"
+		icon_state = "normal"
 
-	cow_nose
-		name = "Cow nose"
-		icon_state = "cownose"
-		color_blend_mode = ICON_MULTIPLY
-		body_parts = list(BP_HEAD)
+	dik_circumcised
+		name = "Circumcised Dick"
+		icon_state = "cut"
 
-	zmask
-		name = "Eye mask"
-		icon_state = "zmask"
-		color_blend_mode = ICON_MULTIPLY
-		body_parts = list(BP_HEAD)
+	dik_big
+		name = "Big Dick"
+		icon_state = "big"
 
-	zbody
-		name = "Thick jagged stripes"
-		icon_state = "zbody"
-		color_blend_mode = ICON_MULTIPLY
-		body_parts = list(BP_L_LEG,BP_R_LEG,BP_GROIN,BP_TORSO)
+	dik_big2
+		name = "Bigger Dick"
+		icon_state = "big2"
 
-	znose
-		name = "Jagged snout"
-		icon_state = "znose"
-		color_blend_mode = ICON_MULTIPLY
-		body_parts = list(BP_HEAD)
+	dik_small
+		name = "Small Dick"
+		icon_state = "small"
 
-	zorren_belly_male
-		name = "Zorren Male Torso"
-		icon_state = "zorren_belly"
-		color_blend_mode = ICON_MULTIPLY
-		body_parts = list(BP_TORSO,BP_GROIN)
+	dik_knotted
+		name = "Knotted Dick"
+		icon_state = "knotted"
 
-	zorren_belly_female
-		name = "Zorren Female Torso"
-		icon_state = "zorren_belly_female"
-		color_blend_mode = ICON_MULTIPLY
-		body_parts = list(BP_TORSO,BP_GROIN)
+	dik_feline
+		name = "Feline Dick"
+		icon_state = "feline"
 
-	zorren_back_patch
-		name = "Zorren Back Patch"
-		icon_state = "zorren_backpatch"
-		color_blend_mode = ICON_MULTIPLY
-		body_parts = list(BP_TORSO)
+	dik_tentacle
+		name = "Tentacle Dicks"
+		icon_state = "tentacle"
 
-	zorren_face_male
-		name = "Zorren Male Face"
-		icon_state = "zorren_face"
-		color_blend_mode = ICON_MULTIPLY
-		body_parts = list(BP_HEAD)
-		gender = MALE
+	dik_tentacle2
+		name = "Tentacle Big Dicks"
+		icon_state = "tentacle_big"
 
-	zorren_face_female
-		name = "Zorren Female Face"
-		icon_state = "zorren_face_female"
-		color_blend_mode = ICON_MULTIPLY
-		body_parts = list(BP_HEAD)
-		gender = FEMALE
+	dik_normal_slime
+		name = "Slime Normal Dick"
+		icon_state = "normal_slime"
+		species_allowed = list ("Promethean")
 
-	zorren_muzzle_male
-		name = "Zorren Male Muzzle"
-		icon_state = "zorren_muzzle"
-		color_blend_mode = ICON_MULTIPLY
-		body_parts = list(BP_HEAD)
-		gender = MALE
+	dik_small_slime
+		name = "Slime Small Dick"
+		icon_state = "small_slime"
+		species_allowed = list ("Promethean")
 
-	zorren_muzzle_female
-		name = "Zorren Female Muzzle"
-		icon_state = "zorren_muzzle_female"
-		color_blend_mode = ICON_MULTIPLY
-		body_parts = list(BP_HEAD)
-		gender = FEMALE
+	dik_big2_slime
+		name = "Slime Bigger Dick"
+		icon_state = "big2_slime"
+		species_allowed = list ("Promethean")
 
-	zorren_socks
-		name = "Zorren Socks"
-		icon_state = "zorren_socks"
-		color_blend_mode = ICON_MULTIPLY
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND)
+	dik_bishop
+		name = "Bishop Synthpenis"
+		icon_state = "robo-bishop"
+		do_colouration = 0
 
-	zorren_longsocks
-		name = "Zorren Longsocks"
-		icon_state = "zorren_longsocks"
-		color_blend_mode = ICON_MULTIPLY
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND)
+	dik_hesphiastos
+		name = "Hesphiastos Synthpenis"
+		icon_state = "robo-hesphiastos"
+		do_colouration = 0
 
-	tesh_feathers
-		name = "Teshari Feathers"
-		icon_state = "tesh-feathers"
-		color_blend_mode = ICON_MULTIPLY
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_HAND,BP_R_HAND)
+	dik_morpheus
+		name = "Morpheus Synthpenis"
+		icon_state = "robo-morpheus"
+		do_colouration = 0
 
-	harpy_feathers
-		name = "Rapala leg Feather"
-		icon_state = "harpy-feathers"
-		color_blend_mode = ICON_MULTIPLY
-		body_parts = list(BP_L_LEG,BP_R_LEG)
+	dik_wardtakahashi
+		name = "Ward-Takahashi Synthpenis"
+		icon_state = "robo-wardtakahashi"
+		do_colouration = 0
 
-	harpy_legs
-		name = "Rapala leg coloring"
-		icon_state = "harpy-leg"
-		color_blend_mode = ICON_MULTIPLY
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG)
+	dik_zenghu
+		name = "Zeng-hu Synthpenis"
+		icon_state = "robo-zenghu"
+		do_colouration = 0
 
-	alurane
-		name = "Alurane Body"
-		icon_state = "alurane"
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_TORSO,BP_HEAD)
-		ckeys_allowed = list("natje")
+	dik_xion
+		name = "Xion Synthpenis"
+		icon_state = "robo-xion"
+		do_colouration = 0
 
-	body_tone
-		name = "Body toning (for emergency contrast loss)"
-		icon_state = "btone"
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_TORSO)
+	dik_arfs
+		name = "ARFS Synthpenis"
+		icon_state = "robo-arfs"
+		do_colouration = 0
 
-	eboop_panels
-		name = "Eggnerd FBP panels"
-		icon_state = "eboop"
-		color_blend_mode = ICON_MULTIPLY
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_TORSO,BP_HEAD)
+	dik_morpheus
+		name = "Morpheus Synthpenis"
+		icon_state = "robo-morpheus"
+		do_colouration = 0
 
-	osocks_rarm
-		name = "Modular Longsock (right arm)"
-		icon_state = "osocks"
-		color_blend_mode = ICON_MULTIPLY
-		body_parts = list(BP_R_ARM,BP_R_HAND)
+	dik_scorpius
+		name = "Scorpius Synthpenis"
+		icon_state = "robo-scorpius"
+		do_colouration = 0
 
-	osocks_larm
-		name = "Modular Longsock (left arm)"
-		icon_state = "osocks"
-		color_blend_mode = ICON_MULTIPLY
-		body_parts = list(BP_L_ARM,BP_L_HAND)
+	dik_unbranded
+		name = "Unbranded Synthpenis"
+		icon_state = "robo-unbranded"
+		do_colouration = 0
 
-	osocks_rleg
-		name = "Modular Longsock (right leg)"
-		icon_state = "osocks"
-		color_blend_mode = ICON_MULTIPLY
-		body_parts = list(BP_R_FOOT,BP_R_LEG)
+/*
+//////////////////////////////
+/  =----------------------=  /
+/  == Vagina Definitions ==  /
+/  =----------------------=  /
+//////////////////////////////
+*/
 
-	osocks_lleg
-		name = "Modular Longsock (left leg)"
-		icon_state = "osocks"
-		color_blend_mode = ICON_MULTIPLY
-		body_parts = list(BP_L_FOOT,BP_L_LEG)
+/datum/sprite_accessory/vaginas
+	icon = 'icons/vore/extras/vaginas.dmi'
+	species_allowed = list("Human","Unathi","Tajara","Skrell", "Sergal", "Akula","Nevrean", "Highlander Zorren", "Flatland Zorren", "Vulpkanin", "Xenomorph Hybrid","Vulpix")
+
+	vag_none
+		name = "None"
+		icon = null
+		icon_state = null
+		species_allowed = list("Human","Unathi","Tajara","Skrell", "Sergal", "Akula","Nevrean", "Highlander Zorren", "Flatland Zorren", "Vulpkanin", "Xenomorph Hybrid", "Diona", "Teshari", "Promethean")
+
+	vag_normal
+		name = "Normal Vagina"
+		icon_state = "normal"
+
+	vag_hairy
+		name = "Hairy Vagina"
+		icon_state = "hairy"
+
+	vag_gaping
+		name = "Gaping Vagina"
+		icon_state = "gaping"
+
+	vag_dripping
+		name = "Dripping Vagina"
+		icon_state = "dripping"
+
+	vag_tentacle
+		name = "Tentacle Vagina"
+		icon_state = "tentacles"
+
+	vag_dentata
+		name = "Vagina Dentata"
+		icon_state = "dentata"
+		do_colouration = 0
+
+	vag_normal_slime
+		name = "Slime Normal Vagina"
+		icon_state = "normal_slime"
+		species_allowed = list ("Promethean")
+
+	vag_gaping_slime
+		name = "Slime Gaping Vagina"
+		icon_state = "gaping_slime"
+		species_allowed = list ("Promethean")
+
+	vag_dripping_slime
+		name = "Slime Dripping Vagina"
+		icon_state = "dripping_slime"
+		species_allowed = list ("Promethean")
+
+/*
+///////////////////////////////
+/  =-----------------------=  /
+/  == Breasts Definitions ==  /
+/  =-----------------------=  /
+///////////////////////////////
+*/
+
+/datum/sprite_accessory/breasts
+	icon = 'icons/vore/extras/breasts.dmi'
+	species_allowed = list("Human","Unathi","Tajara","Skrell", "Sergal", "Akula","Nevrean", "Highlander Zorren", "Flatland Zorren", "Vulpkanin", "Xenomorph Hybrid","Vulpix")
+
+	brt_none
+		name = "None"
+		icon = null
+		icon_state = null
+		species_allowed = list("Human","Unathi","Tajara","Skrell", "Sergal", "Akula","Nevrean", "Highlander Zorren", "Flatland Zorren", "Vulpkanin", "Xenomorph Hybrid", "Diona", "Teshari", "Promethean")
+
+	brt_normala
+		name = "Tiny Breasts"
+		icon_state = "normal_a"
+
+	brt_normalb
+		name = "Small Breasts"
+		icon_state = "normal_b"
+
+	brt_normalc
+		name = "Normal Breasts"
+		icon_state = "normal_c"
+
+	brt_normald
+		name = "Big Breasts"
+		icon_state = "normal_d"
+
+	brt_normale
+		name = "Very Big Breasts"
+		icon_state = "normal_e"
+
+	brt_slimea
+		name = "Slime Tiny Breasts"
+		icon_state = "slime_a"
+		species_allowed = list ("Promethean")
+
+	brt_slimeb
+		name = "Slime Small Breasts"
+		icon_state = "slime_b"
+		species_allowed = list ("Promethean")
+
+	brt_slimec
+		name = "Slime Normal Breasts"
+		icon_state = "slime_c"
+		species_allowed = list ("Promethean")
+
+	brt_slimed
+		name = "Slime Big Breasts"
+		icon_state = "slime_d"
+		species_allowed = list ("Promethean")
+
+	brt_slimee
+		name = "Slime Very Big Breasts"
+		icon_state = "slime_e"
+		species_allowed = list ("Promethean")
+
+	brt_bishop
+		name = "Bishop Synthbreasts"
+		icon_state = "robo-bishop"
+		do_colouration = 0
+
+	brt_hesphiastos
+		name = "Hesphiastos Synthbreasts"
+		icon_state = "robo-hesphiastos"
+		do_colouration = 0
+
+
+	brt_wardtakahashi
+		name = "Ward-Takahashi Synthbreasts"
+		icon_state = "robo-wardtakahashi"
+		do_colouration = 0
+
+	brt_zenghu
+		name = "Zeng-hu Synthbreasts"
+		icon_state = "robo-zenghu"
+		do_colouration = 0
+
+	brt_xion
+		name = "Xion Synthbreasts"
+		icon_state = "robo-xion"
+		do_colouration = 0
+
+	brt_nt
+		name = "NanoTrasen Synthbreasts"
+		icon_state = "robo-nanotrasen"
+		do_colouration = 0
+
+	brt_scorpius
+		name = "Scorpius Synthbreasts"
+		icon_state = "robo-scorpius"
+		do_colouration = 0
+
+	brt_morpheus
+		name = "Morpheus Synthbreasts"
+		icon_state = "robo-morpheus"
+		do_colouration = 0
+
+	brt_unbranded
+		name = "Unbranded Synthbreasts"
+		icon_state = "robo-unbranded"
+		do_colouration = 0

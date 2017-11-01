@@ -145,12 +145,6 @@ var/global/list/tf_egg_types = list(
 	for(var/path in paths)
 		var/datum/sprite_accessory/tail/instance = new path()
 		tail_styles_list[path] = instance
-
-	// Custom Wings, woo, finally. . _. - Jonathan
-	paths = typesof(/datum/sprite_accessory/wing) - /datum/sprite_accessory/wing
-	for(var/path in paths)
-		var/datum/sprite_accessory/wing/instance = new path()
-		wing_styles_list[path] = instance
 /*
 	// Custom species traits
 	paths = typesof(/datum/trait) - /datum/trait

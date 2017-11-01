@@ -1000,7 +1000,7 @@
 /obj/item/projectile/bullet/pellet/shotgun/ks23/rubber
 	name = "rubber pellet"
 	damage = 2.5		//So you can't just keep shooting at your victim at pointblank to keep them down
-	agony = 18		//RIOT GUN MEMES
+	agony = 15		//RIOT GUN MEMES
 	embed_chance = 0		//DOCTOR A RUBBER BALL IS STUCK IN MY SPLEEN
 	sharp = 0		//OH GOD THESE RUBBER BALLS ARE SHARPER THAN KITCHEN KNIVES
 	eyeblur = 2
@@ -1062,7 +1062,6 @@
 	desc = "A 23mm shell."
 	icon = 'icons/obj/gun_arfs.dmi'
 	icon_state = "kshell"
-	caliber = "23mm"
 	projectile_type = /obj/item/projectile/bullet/pellet/shotgun/ks23
 	matter = list(DEFAULT_WALL_MATERIAL = 360)
 
@@ -1096,91 +1095,5 @@
 	icon_state = "ks23"
 	icon = 'icons/obj/gun_arfs.dmi'
 	item_state = "cshotgun"
-	caliber = "23mm"
 	max_shells = 3 //3+1
 	ammo_type = /obj/item/ammo_casing/shotgun/ks23
-
-/*
-	REVOLVER MEMES
-*/
-
-/obj/item/weapon/gun/projectile/revolver/r50
-	name = "rhino"
-	icon_state = "r50ds"
-	icon = 'icons/obj/gun_arfs.dmi'
-	desc = "This unique looking handgun appears to be a cheaper variant of a certain other unique looking handgun. Uses .357 rounds."
-
-/obj/item/weapon/gun/projectile/revolver/r20
-	name = "rhino"
-	icon_state = "r20ds"
-	icon = 'icons/obj/gun_arfs.dmi'
-	desc = "This unique looking handgun appears to be a snub-nosed variant of a cheaper variant of a certain other unique looking handgun. Uses .357 rounds."
-	w_class = ITEMSIZE_SMALL
-	accuracy = -1
-
-///RSh-12 memes///
-
-/obj/item/projectile/bullet/pistol/a127
-	damage = 55
-	penetrating = 1
-	armor_penetration = 75
-
-/obj/item/projectile/bullet/pistol/a127/rubber
-	damage = 10
-	penetrating = 0
-	armor_penetration = -50
-	agony = 55
-	stun = 1
-	weaken = 3
-
-/obj/item/projectile/bullet/pistol/a127/hp
-	damage = 70
-	penetrating = 0
-	armor_penetration = -50
-
-/obj/item/ammo_casing/c127
-	desc = "A 12.7mm bullet casing."
-	caliber = "127"
-	projectile_type = /obj/item/projectile/bullet/pistol/a127
-
-/obj/item/ammo_casing/c127r
-	desc = "A 12.7mm rubber bullet casing."
-	caliber = "127"
-	icon_state = "r-casing"
-	projectile_type = /obj/item/projectile/bullet/pistol/a127/rubber
-
-/obj/item/ammo_casing/c127/hp
-	desc = "A 12.7mm hollow point bullet casing."
-	projectile_type = /obj/item/projectile/bullet/pistol/a127/hp
-
-/obj/item/ammo_magazine/c127
-	name = "speedloader (12.7mm)"
-	desc = "A speedloader for 12.7mm revolvers."
-	icon_state = "38"
-	caliber = "127"
-	ammo_type = /obj/item/ammo_casing/c127
-	matter = list(DEFAULT_WALL_MATERIAL = 1260)
-	max_ammo = 6
-	multiple_sprites = 1
-
-/obj/item/ammo_magazine/c127/rubber
-	name = "speedloader (12.7mm rubber)"
-	ammo_type = /obj/item/ammo_casing/c127r
-
-/obj/item/ammo_magazine/c127/hp
-	name = "speedloader (12.7mm hollow point)"
-	ammo_type = /obj/item/ammo_casing/c127/hp
-
-/obj/item/weapon/gun/projectile/revolver/rsh
-	name = "anti-materiel revolver"
-	icon_state = "rsh12"
-	icon = 'icons/obj/gun_arfs.dmi'
-	desc = "This revolver was meant for use in urban environments, having maximum stopping power yet (relatively) minimal penetration to reduce collateral damage. Uses 12.7mm rounds."
-	caliber = "127"
-	ammo_type = /obj/item/ammo_casing/c127
-	one_handed_penalty = 2
-	fire_delay = 10
-
-/*
-	end of revolver memes
-*/

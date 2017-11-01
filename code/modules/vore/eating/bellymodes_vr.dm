@@ -308,7 +308,6 @@
 			if(TFchance == 1)
 				if(P.species != O.species || P.tail_style != O.tail_style || P.custom_species != O.custom_species || P.ear_style != O.ear_style)
 					P.tail_style = O.tail_style
-					P.wing_style = O.wing_style
 					P.ear_style = O.ear_style
 					P.species = O.species
 					P.custom_species = O.custom_species
@@ -381,7 +380,6 @@
 					P.r_tail = O.r_tail
 					P.g_tail = O.g_tail
 					P.b_tail = O.b_tail
-					P.wing_style = O.wing_style
 					P.ear_style = O.ear_style
 					P.species = O.species
 					P.custom_species = O.custom_species
@@ -417,7 +415,6 @@
 
 			P.tail_style = O.tail_style
 			P.ear_style = O.ear_style
-			P.wing_style = O.wing_style
 			P.species = O.species
 			P.species.create_organs(P)
 			for(var/obj/item/organ/I in P.organs)
@@ -519,8 +516,6 @@
 			P.r_eyes 			= O.r_eyes
 			P.g_eyes 			= O.g_eyes
 			P.b_eyes 			= O.b_eyes
-			P.wing_style		= O.wing_style
-
 
 			P.species.create_organs(P)
 			for(var/obj/item/organ/I in P.organs)
